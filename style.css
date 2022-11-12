@@ -1,0 +1,386 @@
+/* ここから下に記載していく */
+head{
+    width: 1200px;
+}
+
+body{
+    width: 100%;
+    width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+header{
+    display: flex;
+    border-left: solid 3px #bfbfbf;
+    border-right: solid 3px #bfbfbf;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+.nav-link{ 
+    margin-right: 50px;
+    text-decoration: none;
+    color: rgb(75, 74, 74);
+}
+
+.link{
+    font-size: 21px;
+    display: flex;
+    text-transform: uppercase;
+}
+
+img{
+    max-width: 100%;
+    height:auto;
+    width: auto;
+}
+
+.ヘッダー {
+    position: relative;
+}
+
+p{
+    margin-bottom: 15px;
+}
+
+.重ね文字 {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+       width: 1200px;
+}
+
+
+.表紙{
+    text-align: center;
+    color: gray;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+    color:white;
+    font-weight: bold;
+}
+
+h2{
+    font-size: 30px;
+    color: white;
+    width: 100%;
+    margin-top: 30px;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+h4 {
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+}
+
+/* ABOUT箇所 */
+.見出し1{
+    color: #ffd61a;
+}
+.小見出し{
+    font-size: 18px;
+    margin-bottom: 60px;
+    color: gray;
+}
+.養成学校{
+    margin-bottom: 30px;
+    color: gray;
+}
+.自給自足{
+    margin-bottom: 40px;
+    color: gray;
+}
+.TOKYO{
+    margin-bottom: 40px;
+    color: gray;
+}
+.卒業{
+    color: gray;
+}
+
+/* course箇所 */
+.写真4{
+    display: flex;
+    width: 1200px;
+    width: 100%;
+    margin-top: 80px;
+    
+}
+ .連続写真{
+    width: 300px;
+}
+.course2{
+    background-color: #fafafa;
+}
+.カリキュラム{
+    margin-bottom: 60px;
+    color: gray;
+}  
+.畑とメッセージ{
+    text-align: center;
+    display: flex;
+}
+.畑{
+    width: 600px;
+}
+.畑2{
+    margin-left: 50px;
+    margin-bottom: auto;
+    text-align: right;
+    width: 480px;
+  }
+
+.畑3{
+    text-align: left;
+    margin-bottom: 40px;
+    margin-top: 120px;
+}
+.畑4{
+    color: gray;
+    text-align: left;
+    font-size: 15px;
+}
+.畑5{
+    text-align: left;
+    margin-bottom: 40px;
+    margin-top: 120px;
+}
+.畑6{
+    color: grey;
+    font-size: 15px;
+    width: 430px;
+    
+}
+.畑7{
+    width: 600px;
+}
+.畑8{
+    margin-right: 50px;
+    margin-left: 120px;
+    margin-bottom: auto;
+    text-align: left;
+}
+
+/* NEWS箇所　ホバーアクションNOT YET!!!! */
+.ピザ{
+    text-align: center;
+}
+.ニュース配列{
+    text-align: center;
+}
+.ニュース羅列{
+    display: flex;
+    color: gray;
+}
+.ピザ1{
+    width: 300px;
+    margin-right: 30px;
+    margin-left: 120px;
+}
+.ピザ2{
+    width: 300px;
+    margin-right: 30px;
+}
+.ピザ3{
+    width: 300px;
+}
+.ニュース{
+    margin-bottom: 60px;
+    color: gray;
+}
+.ニュース日付{
+    text-align: left;
+    font-size: 14px;
+    margin-top: 30px;
+}
+.ニュース原稿{
+    text-align: left;
+    font-size: 14px;
+    margin-top: 24px;
+    margin-bottom: 60px;
+}
+#More{
+    display: block;
+    width: 300px;
+    margin:auto;
+    background-color: #ffd61a;
+    color: white;
+    padding: 21px ;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+#More:hover{
+    color: #25ceff;
+    text-decoration:underline;
+}
+
+.more枠{
+    margin-bottom: 60px;
+}
+
+
+/* Access箇所 */
+#Access{
+    background-color: #fafafa;
+    padding-top: 1px;
+    padding-bottom: 60px;
+}
+
+.access上部{
+    margin-top: 60px;
+}
+
+.会社情報{
+    color: #707070;
+    margin-bottom: 60px;
+}
+
+#map {
+    width: 1200px;
+    height: 300px;
+    margin-bottom: 60px;
+  }
+
+iframe{
+    width: 100%;
+    height: 100%;
+  }
+
+.Access_wrapper{
+    color: #707070;
+    width: 700px;
+    margin-left: 300px;
+}
+.Access_inner{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Access_title{
+    width: 200px;
+    text-align: left;
+    margin: 15px;
+}
+.Access_item{
+    width: 360px;
+    margin: 15px;
+    text-align: left;
+}
+.Contact_説明{
+    margin-bottom: 60px;
+}
+
+.Contact_文章{
+    margin-top: 30px;
+}
+
+.form-wrapper{
+    width: 660px;
+    margin: auto;
+    margin-top: 55px;
+    border-bottom: solid 2px #bfbfbf;
+}
+
+.form-inner{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-title{
+    width: 216px;
+    text-align: left;
+    padding: 8px;
+    margin-left: 16px;
+    padding-top: 20px;
+    border-top: solid 2px #bfbfbf;
+    border-right: solid 2px #bfbfbf;
+}
+
+.form-item{
+    width: 390px;
+    padding: 0;
+    text-align: left;
+    border-top: solid 2px #bfbfbf;
+}
+.form-item.例外{
+    height: 55px;
+}
+
+.form-item.例外2{
+    height: 160px;
+    text-align: left;
+    padding: 8px;
+}
+
+
+.email{
+    font-size: 16px;
+    height: 36px;
+    border: solid 1px #c9c9c9;
+    width: 80%;
+    margin: 8px;
+    text-align: left;
+    padding: 0;
+}
+.detail{
+    font-size: 16px;
+    border: solid 1px #c9c9c9;
+    width: 80%;
+    margin: 8px;
+    text-align: left;
+    padding: 0;
+}
+.選択{
+    margin-bottom: 24px;
+    font-size: 16px;
+    width: 400px;
+}
+
+#送信{
+    margin-top: 30px;
+    margin-bottom: 140px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+    height: 60px;
+    text-decoration: none;
+    width: 300px;
+}
+
+.送信2{
+    width: 100%;
+    height: 100%;
+    background: #ffd61a;
+    border: none;
+    color: white;
+}
+
+.送信2:hover{
+    color: #25ceff;
+    text-decoration:underline;
+}
+
+/* footer箇所 */
+footer{
+    background-color: #707070;
+    color: rgb(194, 192, 192);
+    text-align: center;
+    width: 1200px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
