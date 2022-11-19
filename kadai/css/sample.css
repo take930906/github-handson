@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'MyFont';
+    src: url('./font/PixelMplus-20130602/PixelMplus10-Regular.ttf');
+  }
+body{
+    background-image: URL(Pockemon7.jpeg) ;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-weight: bold;
+    font-family:'MyFont';
+}
+.main{
+    padding-top: 50%;
+    padding-bottom: 50%;
+    text-align: center;
+    font-size:30px;
+}
+.div_start{
+    padding: 30px;
+}
+#start_btn{
+    -webkit-animation: blink 2s ease infinite;
+	animation: blink 2s ease infinite;
+    padding-top: 30px;
+}
+@-webkit-keyframes blink {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+@keyframes blink {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+ul{
+    margin: auto;
+    display:table;  /* 定義 */
+    table-layout: fixed;
+    width: 100%;
+}
+li{
+    text-align: center;
+    list-style-type:none;
+    display:table-cell;  /* 定義 */
+    cursor: pointer;
+    height: 100px;
+}
+li:hover{
+    background:black;
+    color:#fff;
+}

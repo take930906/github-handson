@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<script src="js/jquery-2.1.3.min.js"></script>
+<link rel="stylesheet" href="css/sample2.css">
+<title>第一章</title>
+</head>
+
+<header>
+  <h1>第一章：基本動作</h1>
+</header>
+
+<body>
+
+<p class="start">
+ポケモンの せかいへ ようこそ<br>オーキドはかせが 先輩と貴方に ポケモンを 授けようとしています
+</p>
+
+<main>
+  <div class="div_person">
+    <img src="./img/Pockemon4.jpeg" class="pic_person" alt="">
+    <p>オーキド博士「貴兄にポケモン1体を授けよう。1体選ぶんじゃ。」</p>
+  </div>
+  
+  <div class="div_person">
+    <img src="./img/Pockemon5.jpeg" class="pic_person" alt="">
+    <p class=""div_person> 先輩「恐縮です。それでは、<span id="answer">なにを</span>を頂戴致し度。」</p>
+  </div>
+
+  <div class="div_person">
+    <img src="./img/Pockemon4.jpeg" class="pic_person" alt="">
+    <p>オーキド博士「うむ。よい選択じゃ。貴兄も選びなさい。」</p>
+  </div>
+
+  <div class="div_query">
+    <p>質問:あなたはどのポケモンをえらびますか？</p>
+    <p>回答:</p>
+  <ul>
+    <li id="fire_btn"><img src="./img/Pockemon1.jpeg" class="pic_Pockemon" alt=""></li>
+    <li id="kusa_btn"><img src="./img/Pockemon2.jpeg" class="pic_Pockemon" alt=""></li>
+    <li id="water_btn"><img src="./img/Pockemon3.jpeg" class="pic_Pockemon" alt=""></li>
+  </ul>
+  </div>
+   
+  <div id="judgment">
+    <div class="div_answer">
+      <img src="./img/Pockemon4.jpeg" class="pic_person" alt="">
+      <p><span id="answer2"></span></p>
+    </div>
+  </div>
+  
+  <div class="next">
+    <input value="つぎへ　すすむ" type="button" onclick="sample()" id="next_btn">
+  </div>
+
+</main>
+
+<footer></footer>
+
+<script>
+
+    const r = Math.random();
+    const n = Math.ceil(r*3);
+       
+    if(n == 1){
+      $("#answer").html("「ヒトカゲ」");  
+    }else if (n == 2){
+      $("#answer").html("「フシギダネ」");  
+    }else if (n == 3){
+      $("#answer").html("「ゼニガメ」");  
+    }
+
+    // ヒトカゲの時
+    if(n == 1){
+      $("#fire_btn").on("click", function(){
+        $("#answer2").html("オーキド博士「先輩が既に選択しているんじゃ。よしなにやってくれんかのう。。」");  
+      })
+    }
+ 
+    if(n == 1){
+      $("#kusa_btn").on("click", function(){
+        $("#answer2").html("オーキド博士「よい選択じゃ。サラリーマンはテニオハが大事じゃからの。」");  
+      })
+    }
+
+    if(n == 1){
+      $("#water_btn").on("click", function(){
+        $("#answer2").html("オーキド博士「突き上げ系じゃのう。先が危ぶまれるわい。。よしなにやってくれるんかのう。。」");  
+      })
+    }
+
+// フシギダネの時
+    if(n == 2){
+      $("#fire_btn").on("click", function(){
+        $("#answer2").html("オーキド博士「突き上げ系じゃのう。先が危ぶまれるわい。。よしなにやってくれるんかのう。。」");  
+      })
+    }
+ 
+    if(n == 2){
+      $("#kusa_btn").on("click", function(){
+        $("#answer2").html("オーキド博士「先輩が既に選択しているんじゃ。よしなにやってくれんかのう。。」");  
+      })
+    }
+
+    if(n == 2){
+      $("#water_btn").on("click", function(){
+        $("#answer2").html("オーキド博士「よい選択じゃ。サラリーマンはテニオハが大事じゃからの。」");  
+      })
+    }
+
+    // ゼニガメの時
+    if(n == 3){
+      $("#fire_btn").on("click", function(){
+        $("#answer2").html("オーキド博士「よい選択じゃ。サラリーマンはテニオハが大事じゃからの。」");  
+      })
+    }
+ 
+    if(n == 3){
+      $("#kusa_btn").on("click", function(){
+        $("#answer2").html("オーキド博士「突き上げ系じゃのう。先が危ぶまれるわい。。よしなにやってくれるんかのう。。」");  
+      })
+    }
+
+    if(n == 3){
+      $("#water_btn").on("click", function(){
+        $("#answer2").html("オーキド博士「先輩が既に選択しているんじゃ。よしなにやってくれんかのう。。」");  
+      })
+    }
+
+    if("#answer2" == "オーキド博士「よい選択じゃ。サラリーマンはテニオハが大事じゃからの。」")
+    {
+      $("#next_btn").on("click", function(){
+        document.location.href = 'https://www.sejuku.net/blog/64379';
+      })
+    }else
+      {
+      function sample() {
+       window.alert("オーキド博士が困っているので、もう一度選択してください");
+      }}
+
+
+    function frameClick() {
+      document.location.href = "https://www.mitsubishicorp.com/jp/ja/";
+    }
+
+
+</script>
+
+
+
+</body>
+</html>

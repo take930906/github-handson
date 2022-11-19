@@ -1,0 +1,126 @@
+@font-face {
+    font-family: 'MyFont';
+    src: url('./font/PixelMplus-20130602/PixelMplus10-Regular.ttf');
+  }
+header{
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    padding: 30px;
+    margin: 0;
+    background-color: #000000;
+    color:white;
+    font-size: 1vw;
+}
+h1{
+    background-color: #000000;
+    margin: 0;
+    padding: 20px;
+}
+  body{
+    margin:0;
+    padding:0;
+    text-align:left;
+    background-image: URL(Pockemon6.jpeg) ;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+    color:black;
+    font-weight: bold;
+    font-family:'MyFont';
+}
+main{
+    border-bottom:1px solid #ccc;
+}
+p{
+    font-size:1.5vw;
+    padding-left: 10px;
+}
+.start{
+    width: 100%;
+    height: 100%;
+    background-color:black;
+    margin: 0;
+    padding: 2%;
+    border-bottom: 3px solid white;
+    color: white;
+    animation-delay: 0.2s;
+}
+ul{
+    padding: 0;
+    margin: 0;
+    border-top: 1px solid #000000;
+    display:table;  /* 定義 */
+    table-layout: fixed;
+    width:100%;
+}
+li{
+    text-align: center;
+    list-style-type:none;
+    border: 1px solid #666;
+    background-color:rgba(0, 0, 0, 0.432);
+    display:table-cell;  /* 定義 */
+    cursor: pointer;
+    height: 100%;
+}
+.div_query{
+    font-weight: bold;
+    text-align: left;
+}
+.div_person{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.pic_person{
+    border: 1px solid black;
+    width: 5%;
+    height: 5%;
+}
+.pic_Pockemon{
+    width: 30%;
+    height: 30%;
+    padding-bottom: 7%;
+}
+li:hover{
+    background:black;
+    color:#fff;
+}
+.div_answer{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0, 0, 0.432);
+}
+.next{
+    margin: auto;
+    color: black;
+    cursor: pointer;  
+    font-size:1.5vw;  
+    border: 0px;
+    }
+.next_btn{
+    margin-top: 30px;
+    height: 100%;
+}
+input{
+    width: 100% ;
+    height: 100%;
+    padding-top: 30px ;
+    padding-bottom: 30px;
+    cursor: pointer;
+    background-color: black;
+    font-size: 1vw;
+    font-family:'MyFont';
+    color: white;
+}
+input:hover{
+    background:white;
+    color:black;
+}
+    footer{
+    background-color: #fff;
+    border-bottom:1px solid #ccc;
+    text-align: center;
+}
