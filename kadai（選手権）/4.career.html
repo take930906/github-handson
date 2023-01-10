@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>キャリア検索</title>
+<script src="js/jquery-2.1.3.min.js"></script>
+<link rel="stylesheet" href="css/sample3.css">
+</head>
+<body>
+<header>
+<h1>キャリア検索　メニュー</h1>
+</header>
+<main>
+    <ul>
+        <li id="searchDivision">部署から選択</li>
+        <li id="searchPerson">人物から選択</li>
+        <li id="searchArea">地域から選択</li>
+    </ul>
+</main>
+
+<script>
+
+$("#searchDivision").on("click",function(){
+    document.location.href = "./4.career(α).html";
+});
+
+$("#searchPerson").on("click",function(){
+    document.location.href = "./4.career(β).html";
+});
+
+$("#searchArea").on("click",function(){
+    document.location.href = "./4.career(γ).html";
+});
+
+
+</script>
+<footer><small>MC</small></footer>
+</body>
+</html>

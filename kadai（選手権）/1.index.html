@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>MC:ホーム画面</title>
+<script src="js/jquery-2.1.3.min.js"></script>
+<link rel="stylesheet" href="css/sample3.css">
+</head>
+<body>
+<header>
+<h1>ホーム　メニュー</h1>
+</header>
+<main>
+    <ul>
+        <li id="knowledge">知恵袋</li>
+        <li id="tweet">つぶやき</li>
+        <li id="career">キャリア検索</li>
+    </ul>
+</main>
+
+<script>
+
+$("#knowledge").on("click",function(){
+    document.location.href = "./2.knowledge.html";
+});
+
+$("#tweet").on("click",function(){
+    document.location.href = "./3.tweet.html";
+});
+
+$("#career").on("click",function(){
+    document.location.href = "./4.career.html";
+});
+
+</script>
+<footer><small>MC</small></footer>
+</body>
+</html>

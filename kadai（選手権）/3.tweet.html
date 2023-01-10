@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>つぶやき</title>
+<link rel="stylesheet" href="css/text2.css">
+</head>
+
+<body>
+
+<header>
+<h1>つぶやき</h1>
+</header>
+<main id="msg">
+   
+
+    <div>
+        <div>
+            名前: <input type="text" id="uname" placeholder="任意">
+        </div>
+        <div>
+            内容：<textarea name="" id="text" cols="40" rows="1" placeholder="投稿を入力してください"></textarea>
+            <button id="send">送信</button>
+        </div>
+        
+        <p></p>
+        <div id="output"><span></span></div>
+        <button id="delete">過去のつぶやき履歴を非表示</button>
+        <button id="reset">過去のつぶやき履歴を削除する</button>
+    </div>
+
+    
+
+</main>
+
+<!-- JQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- JQuery -->
+
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+    import { getDatabase, ref, push, set, onChildAdded, remove, onChildRemoved }
+        from "https://cdnjs.cloudflare.com/ajax/libs/firebase/9.15.0/firebase-database.js";
+  
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "",
+      authDomain: "chat-app-55956.firebaseapp.com",
+      projectId: "chat-app-55956",
+      storageBucket: "chat-app-55956.appspot.com",
+      messagingSenderId: "776935670837",
+      appId: "1:776935670837:web:7e8ee888f09d9378bedd7c"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    
+    const db = getDatabase(app);
+    const dbRef = ref(db,"chat");
+
+// 送信
+$("#send").on("click", function(){
+    const msg = {
+        uname: $("#uname").val(),
+        text: $("#text").val()
+    }
+    const newPostRef = push(dbRef);
+    set(newPostRef, msg); 
+})
+
+onChildAdded(dbRef, function(data){
+    const msg = data.val();
+    const key = data.key;
+    let h = "<p>";
+        h += msg.uname
+        h += "<br>";
+        h += msg.text;
+        h += "</p>";
+        $("#output").append(h);
+})
+// const h = `<p>${msg.uname}<br>${msg.text}</P>`;
+            
+// 削除
+$("#delete").on("click",function(){
+    localStorage.clear();
+    $("#output").empty();
+});
+
+$("#reset").on("click",function(){
+    const newPostref = remove(dbRef);
+    $("#output").empty();
+});
+
+
+</script>
+
+
+<footer><small></small></footer>
+</body>
+
+</html>

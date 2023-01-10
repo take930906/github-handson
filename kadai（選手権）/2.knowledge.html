@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>知恵袋</title>
+<script src="js/jquery-2.1.3.min.js"></script>
+<link rel="stylesheet" href="css/sample3.css">
+</head>
+<body>
+<header>
+<h1>知恵袋　メニュー</h1>
+</header>
+<main>
+    <ul>
+        <li id="question">質問する</li>
+        <li id="answer">質問を検索/回答</li>
+    </ul>
+</main>
+
+<script>
+
+$("#question").on("click",function(){
+    document.location.href = "./2.knowledge(α).html";
+});
+
+$("#answer").on("click",function(){
+    document.location.href = "./2.knowledge(β).html";
+});
+
+
+</script>
+<footer><small>MC</small></footer>
+</body>
+</html>
