@@ -1,0 +1,31 @@
+header {
+    background-color: darkblue;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    color: #fff;
+  }
+  
+
+  h2{
+    background-color: darkblue;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    color: #fff;
+  }
+
+ul  {
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    color: #fff;
+  }
+
+.name  {
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    color: #fff;
+  }
+
+h3{
+    border: 1px solid #ccc;
+    background-color: aqua;
+  }
